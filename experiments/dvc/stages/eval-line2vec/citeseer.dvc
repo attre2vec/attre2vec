@@ -1,0 +1,23 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-line2vec.py --config experiments/configs/eval-line2vec/citeseer.yml
+wdir: ../../../..
+deps:
+- path: experiments/scripts/eval-line2vec.py
+  md5: 4fd5e2786e6d32d31eea25a6cad848f0
+- path: experiments/configs/eval-line2vec/citeseer.yml
+  md5: 7a2c110fbb9189451d52b6f41e686443
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+- path: data/line2vec/embed/citeseer.pkl
+  md5: 443b4eb5228e1b9e902267b48bbcc6d5
+outs:
+- path: data/vectors/citeseer/BL_line2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 33138aa816a71fe4b54aa4035df9e66c.dir
+- path: data/metrics/bl/citeseer/line2vec.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: cdd9b6768dd733c191c2bb795c060f29
+md5: 9815029713e71d1ac806b9acd3ba3b4b

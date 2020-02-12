@@ -1,0 +1,13 @@
+paths:
+  input:
+    dataset: 'data/datasets/pubmed.pkl'
+  output:
+    vectors: 'data/vectors/pubmed/${NAME}/${IDX}.pkl'
+    metrics: 'data/metrics/bl/pubmed/${NAME}.pkl'
+
+base_clf:
+  module: 'sklearn.linear_model.LogisticRegression'
+  args:
+    max_iter: 500
+    multi_class: 'multinomial'
+    n_jobs: -1

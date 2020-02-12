@@ -1,0 +1,7 @@
+md5: 410f51c612c4bb4b1f5f7c6fecd2c672
+outs:
+- md5: 7019c2ec47249eb20c5debf4204870f3
+  path: results-citeseer-GRU.csv
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,5 @@
+cmd: echo "Dummy stage"
+deps:
+- path: data/plots
+  md5: 945bb9225c66b7d28ded891c2d9be61b.dir
+md5: 303b258f6792f4b03c8d17991430edb0

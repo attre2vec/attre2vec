@@ -1,0 +1,13 @@
+model:
+  type: 'deep_walk'
+  op: 'avg'
+  dim: 64
+
+scenarios:
+  - name: 'dw/nf/full'
+    concat: False
+    dim-reduction: -1
+
+  - name: 'dw/nfef/full'
+    concat: True
+    dim-reduction: -1

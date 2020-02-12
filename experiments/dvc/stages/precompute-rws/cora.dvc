@@ -1,0 +1,17 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/precompute-rws.py --config experiments/configs/precompute-rws/cora.yml
+  --input data/datasets/cora.pkl --output data/rws/cora/
+wdir: ../../../..
+deps:
+- path: experiments/scripts/precompute-rws.py
+  md5: be80a98b78a2e42411b206f396900a65
+- path: experiments/configs/precompute-rws/cora.yml
+  md5: ead019386272c96e4d8e3f7657738b85
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/rws/cora
+  cache: true
+  metric: false
+  persist: false
+  md5: 2557c358125d8e9eb2e976f5ecc17fcc.dir
+md5: cdb4e10f44db3dcb2430a72f4f728975

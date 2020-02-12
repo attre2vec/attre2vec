@@ -1,0 +1,21 @@
+paths:
+  input:
+    dataset: 'data/datasets/citeseer.pkl'
+    rws: 'data/rws/citeseer'
+  output:
+    model: 'data/models/citeseer/${NAME}/${IDX}.pkl'
+    losses: 'data/plots/losses/citeseer/${NAME}/${IDX}.png'
+    logs: 'data/logs/citeseer/${NAME}/'
+    vectors: 'data/vectors/citeseer/${NAME}/${IDX}.pkl'
+    metrics: 'data/metrics/ae/citeseer/${NAME}.pkl'
+
+base_clf:
+  path: 'sklearn.linear_model.LogisticRegression'
+  args:
+    max_iter: 500
+    multi_class: 'multinomial'
+    n_jobs: -1
+
+samples:
+  pos: 5
+  neg: 10

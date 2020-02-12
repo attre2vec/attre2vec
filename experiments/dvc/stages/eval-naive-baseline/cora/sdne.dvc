@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/cora/common.yml --config experiments/configs/eval-naive-baseline/cora/sdne.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/cora/common.yml
+  md5: 2e467925eb70fa2d06490adad3576da1
+- path: experiments/configs/eval-naive-baseline/cora/sdne.yml
+  md5: cdb57cbd82eeec7e50ac80f57d355031
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/BL_sdne
+  cache: true
+  metric: false
+  persist: false
+  md5: 06b3544968bf24d5cc960e295fd4cdc9.dir
+- path: data/metrics/bl/cora/sdne
+  cache: true
+  metric: false
+  persist: false
+  md5: 4736814a6c14fbdc1d890f65fada6953.dir
+md5: e59346cb002765940d0881fc05e5021d

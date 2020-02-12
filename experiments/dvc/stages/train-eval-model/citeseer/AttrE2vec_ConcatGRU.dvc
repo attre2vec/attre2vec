@@ -1,0 +1,41 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/train-eval-model.py --common-config
+  experiments/configs/train-eval-model/citeseer/common.yml --model-config experiments/configs/train-eval-model/citeseer/AttrE2vec_ConcatGRU.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/train-eval-model.py
+  md5: e03b55dd3e16e673c630efdec906d93e
+- path: experiments/configs/train-eval-model/citeseer/common.yml
+  md5: 1f418216d5330c07bbbb051483766793
+- path: experiments/configs/train-eval-model/citeseer/AttrE2vec_ConcatGRU.yml
+  md5: 962004e5a3c621a02101b01f8e6ac082
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+- path: data/rws/citeseer
+  md5: f4ada249f9d80dc03b7b6de30329416f.dir
+outs:
+- path: data/models/citeseer/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: 5e33c6d9dc547a96e92329cc6e15a710.dir
+- path: data/plots/losses/citeseer/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: 9908fae796678e055dc51ab155b3b460.dir
+- path: data/logs/citeseer/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: eb81da257dbfea54abc5d437a48e9d0e.dir
+- path: data/metrics/ae/citeseer/AttrE2vec_ConcatGRU.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 0acefe48c3e4b032a59c58fb41bbac70
+- path: data/vectors/citeseer/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: e59946dbd1c2182c4fed0e0d7ac16588.dir
+md5: 321c411dcc59598f7cc3f7409d578269

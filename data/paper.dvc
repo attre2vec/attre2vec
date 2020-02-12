@@ -1,0 +1,7 @@
+md5: c4a9490ccfb8aaf21a8f2ff7f3510d11
+outs:
+- md5: 51ebe71c8c5249667c9cc86c61a18925.dir
+  path: paper
+  cache: true
+  metric: false
+  persist: false

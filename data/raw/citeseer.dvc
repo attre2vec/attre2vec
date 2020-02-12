@@ -1,0 +1,7 @@
+md5: 71634651c7b09d03a2d2ed29d04ef9a1
+outs:
+- md5: 9dfc30ea5ba87933b287580c99d0af0e.dir
+  path: citeseer
+  cache: true
+  metric: false
+  persist: false

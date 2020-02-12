@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/pubmed/common.yml --config experiments/configs/eval-naive-baseline/pubmed/struc2vec.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/pubmed/common.yml
+  md5: 014860c9876090eeb4a35b4f7b54f499
+- path: experiments/configs/eval-naive-baseline/pubmed/struc2vec.yml
+  md5: 68e4a3dea8724ec5e65b00290c980042
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+outs:
+- path: data/vectors/pubmed/BL_struc2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 0763b0d7988cb01f323c08b6adbf29d0.dir
+- path: data/metrics/bl/pubmed/struc2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: a30ccb41f77ab26279cdaa2d232c67c3.dir
+md5: e0e59f61099d03883b7192d8dcb1cc47

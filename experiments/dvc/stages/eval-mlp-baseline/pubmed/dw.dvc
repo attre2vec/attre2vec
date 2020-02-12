@@ -1,0 +1,22 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-mlp-baseline.py --common-config
+  experiments/configs/eval-mlp-baseline/pubmed.yml --method dw --dim 64
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-mlp-baseline.py
+  md5: 64d9e3a7282e1ce4321f1580c2ba2ebd
+- path: experiments/configs/eval-mlp-baseline/pubmed.yml
+  md5: 47fb16af40f990ef97eccdf4e95cd41b
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+outs:
+- path: data/vectors/pubmed/MLP_dw
+  cache: true
+  metric: false
+  persist: false
+  md5: cb6a7ad8032f9c9f44dbf3f893937420.dir
+- path: data/metrics/mlp/pubmed/dw
+  cache: true
+  metric: false
+  persist: false
+  md5: 7b5249924eaa3ffcb4897c8788f7297f.dir
+md5: af43716c8985a80d53f3b1d8d5014944

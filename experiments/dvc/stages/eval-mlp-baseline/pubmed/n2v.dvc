@@ -1,0 +1,22 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-mlp-baseline.py --common-config
+  experiments/configs/eval-mlp-baseline/pubmed.yml --method n2v --dim 64
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-mlp-baseline.py
+  md5: 64d9e3a7282e1ce4321f1580c2ba2ebd
+- path: experiments/configs/eval-mlp-baseline/pubmed.yml
+  md5: 47fb16af40f990ef97eccdf4e95cd41b
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+outs:
+- path: data/vectors/pubmed/MLP_n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 96a93e14a079cdf60e2524c60fc232c9.dir
+- path: data/metrics/mlp/pubmed/n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 3116443ced5366de812a651dc575c4dd.dir
+md5: f7032a87e174b2ad56cd3d55edede1e6

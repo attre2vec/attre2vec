@@ -1,0 +1,13 @@
+model:
+  type: 'node2vec'
+  op: 'avg'
+  dim: 64
+
+scenarios:
+  - name: 'n2v/nf/full'
+    concat: False
+    dim-reduction: -1
+
+  - name: 'n2v/nfef/full'
+    concat: True
+    dim-reduction: -1

@@ -1,0 +1,23 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-line2vec.py --config experiments/configs/eval-line2vec/pubmed.yml
+wdir: ../../../..
+deps:
+- path: experiments/scripts/eval-line2vec.py
+  md5: 4fd5e2786e6d32d31eea25a6cad848f0
+- path: experiments/configs/eval-line2vec/pubmed.yml
+  md5: edcfd3dacbb59e931db352b011000054
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+- path: data/line2vec/embed/pubmed.pkl
+  md5: c75c8e6e997a3ac3766d5413888fe4e5
+outs:
+- path: data/vectors/pubmed/BL_line2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 7ae4f214e03030c8b1f1440593052c8a.dir
+- path: data/metrics/bl/pubmed/line2vec.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: a255b93c2da4db9226d60800bba63316
+md5: 9cd303d06b3b6d223a4f13f4b73e7be4

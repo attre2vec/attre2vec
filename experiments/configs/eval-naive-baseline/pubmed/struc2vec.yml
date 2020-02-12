@@ -1,0 +1,13 @@
+model:
+  type: 'struc2vec'
+  op: 'avg'
+  dim: 64
+
+scenarios:
+  - name: 'struc2vec/nf/full'
+    concat: False
+    dim-reduction: -1
+
+  - name: 'struc2vec/nfef/full'
+    concat: True
+    dim-reduction: -1

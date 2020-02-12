@@ -1,0 +1,7 @@
+md5: fffb49e2b0420328a9247e0036add5bf
+outs:
+- md5: 9d02eed5d39c9c72c5fdf05af36b2e48
+  path: results-cora-GRU.csv
+  cache: true
+  metric: false
+  persist: false

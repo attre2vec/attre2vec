@@ -1,0 +1,7 @@
+model:
+  type: 'simple'
+
+scenarios:
+  - name: 'simple/full'
+    concat: False
+    dim-reduction: -1

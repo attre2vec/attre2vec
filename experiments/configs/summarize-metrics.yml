@@ -1,0 +1,51 @@
+models:
+  datasets:
+    - 'cora'
+    - 'citeseer'
+    - 'pubmed'
+  bl:
+    base_path: 'data/metrics/bl/${DATASET}/${NAME}/${VARIANT}.pkl'
+    models:
+      - name: 'simple'
+        variants: ['full',]
+      - name: 'dw/nf'
+        variants: ['full',]
+      - name: 'dw/nfef'
+        variants: ['full',]
+      - name: 'n2v/nf'
+        variants: ['full',]
+      - name: 'n2v/nfef'
+        variants: ['full',]
+      - name: 'sdne/nf'
+        variants: ['full',]
+      - name: 'sdne/nfef'
+        variants: ['full',]
+      - name: 'struc2vec/nf'
+        variants: ['full',]
+      - name: 'struc2vec/nfef'
+        variants: ['full',]
+  line2vec:
+    base_path: 'data/metrics/bl/${DATASET}/line2vec.pkl'
+  mlp2:
+    base_path: 'data/metrics/mlp/${DATASET}/${NAME}/MLP2.pkl'
+    models:
+      - 'dw'
+      - 'graphsage'
+      - 'n2v'
+      - 'sdne'
+      - 'struc2vec'
+  mlp3:
+    base_path: 'data/metrics/mlp/${DATASET}/${NAME}/MLP3.pkl'
+    models:
+      - 'dw'
+      - 'graphsage'
+      - 'n2v'
+      - 'sdne'
+      - 'struc2vec'
+  ae:
+    base_path: 'data/metrics/ae/${DATASET}/${NAME}.pkl'
+    models:
+      - 'AttrE2vec_Avg'
+      - 'AttrE2vec_Exp'
+      - 'AttrE2vec_ConcatGRU'
+      - 'AttrE2vec_GRU'

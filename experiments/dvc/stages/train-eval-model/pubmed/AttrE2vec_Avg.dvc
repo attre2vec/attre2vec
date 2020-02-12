@@ -1,0 +1,41 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/train-eval-model.py --common-config
+  experiments/configs/train-eval-model/pubmed/common.yml --model-config experiments/configs/train-eval-model/pubmed/AttrE2vec_Avg.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/train-eval-model.py
+  md5: e03b55dd3e16e673c630efdec906d93e
+- path: experiments/configs/train-eval-model/pubmed/common.yml
+  md5: e784828f51fd1b534cce026d0f86e892
+- path: experiments/configs/train-eval-model/pubmed/AttrE2vec_Avg.yml
+  md5: 0b268459b74768b8de9dafee5fc839b9
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+- path: data/rws/pubmed
+  md5: beeb21960fb3e92472537b7d1ac722f1.dir
+outs:
+- path: data/models/pubmed/AttrE2vec_Avg
+  cache: true
+  metric: false
+  persist: false
+  md5: 718de7cadef1b293aa7736ecdbf26fb8.dir
+- path: data/plots/losses/pubmed/AttrE2vec_Avg
+  cache: true
+  metric: false
+  persist: false
+  md5: d107501b22e38063e185389c32fd2f3b.dir
+- path: data/logs/pubmed/AttrE2vec_Avg
+  cache: true
+  metric: false
+  persist: false
+  md5: d339fe1c9c172527f4cf7f83c1385036.dir
+- path: data/metrics/ae/pubmed/AttrE2vec_Avg.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 89777d321e5a7f4182f3c25a21cb974d
+- path: data/vectors/pubmed/AttrE2vec_Avg
+  cache: true
+  metric: false
+  persist: false
+  md5: 926504c67f2d3a41cc9b5307d92d0c94.dir
+md5: d5273043399981282477f0e2e5e9b749

@@ -1,0 +1,10 @@
+git
+wget
+tmux
+htop
+vim
+less
+gcc
+g++
+software-properties-common
+

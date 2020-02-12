@@ -1,0 +1,7 @@
+md5: 062327edf2edb5a4a0229178bf7095c7
+outs:
+- md5: 1af7191eea2e0e44b20b4d820dd0f7e9.dir
+  path: line2vec
+  cache: true
+  metric: false
+  persist: false

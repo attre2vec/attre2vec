@@ -1,0 +1,13 @@
+paths:
+  input:
+    dataset: 'data/datasets/cora.pkl'
+  output:
+    vectors: 'data/vectors/cora/${NAME}/${IDX}.pkl'
+    metrics: 'data/metrics/bl/cora/${NAME}.pkl'
+
+base_clf:
+  module: 'sklearn.linear_model.LogisticRegression'
+  args:
+    max_iter: 500
+    multi_class: 'multinomial'
+    n_jobs: -1

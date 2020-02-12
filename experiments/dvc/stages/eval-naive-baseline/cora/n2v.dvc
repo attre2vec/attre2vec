@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/cora/common.yml --config experiments/configs/eval-naive-baseline/cora/n2v.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/cora/common.yml
+  md5: 2e467925eb70fa2d06490adad3576da1
+- path: experiments/configs/eval-naive-baseline/cora/n2v.yml
+  md5: 2a5596f0929258377c1a7fd2cc6533a5
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/BL_n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 7881c922c7edee9f9ded7659f94370e5.dir
+- path: data/metrics/bl/cora/n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 9c4ad79c90807776541409dc2ed215e3.dir
+md5: 47d1f19508e7d92b2f77255004fd92a7

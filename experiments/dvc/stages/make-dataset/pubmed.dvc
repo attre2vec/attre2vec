@@ -1,0 +1,15 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/make-dataset.py --config experiments/configs/make-dataset/pubmed.yml
+  --name pubmed --output data/datasets/pubmed.pkl
+wdir: ../../../..
+deps:
+- path: experiments/scripts/make-dataset.py
+  md5: dfee728ab346800700e7a8ba05a4e8b3
+- path: experiments/configs/make-dataset/pubmed.yml
+  md5: 5085dd367a62a683f20cc1c7a30683d0
+outs:
+- path: data/datasets/pubmed.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+md5: 7664a7d47651e7decb9e3df8cd2cecfe

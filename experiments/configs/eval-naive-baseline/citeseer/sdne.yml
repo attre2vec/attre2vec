@@ -1,0 +1,13 @@
+model:
+  type: 'sdne'
+  op: 'avg'
+  dim: 64
+
+scenarios:
+  - name: 'sdne/nf/full'
+    concat: False
+    dim-reduction: -1
+
+  - name: 'sdne/nfef/full'
+    concat: True
+    dim-reduction: -1

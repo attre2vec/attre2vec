@@ -1,0 +1,16 @@
+/BL_dw
+/BL_n2v
+/BL_simple
+/BL_struc2vec
+/BL_sdne
+/BL_line2vec
+/AttrE2vec_Avg
+/AttrE2vec_ConcatGRU
+/AttrE2vec_Exp
+/AttrE2vec_GRU
+/BL_graphsage
+/MLP_dw
+/MLP_graphsage
+/MLP_n2v
+/MLP_sdne
+/MLP_struc2vec

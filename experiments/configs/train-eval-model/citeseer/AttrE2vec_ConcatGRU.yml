@@ -1,0 +1,15 @@
+name: 'AttrE2vec_ConcatGRU'
+
+args:
+  aggregator: 'ConcatGRUAggregator'
+  encoder: 'Encoder'
+  decoder: 'MLPDecoder'
+  emb-dim: 64
+
+training:
+  epochs: 150
+  early_stopping: 15
+  learning_rate: 1.e-3
+  weight_decay: 0
+  batch_size: 64
+  mixing: 0.5

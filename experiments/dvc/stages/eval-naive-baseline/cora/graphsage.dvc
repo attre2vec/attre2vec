@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/cora/common.yml --config experiments/configs/eval-naive-baseline/cora/graphsage.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/cora/common.yml
+  md5: 2e467925eb70fa2d06490adad3576da1
+- path: experiments/configs/eval-naive-baseline/cora/graphsage.yml
+  md5: c3ae00588efd6353d1720b77f604f3f7
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/BL_graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: ba8d0f31001f1b7754db467c05fc1c7a.dir
+- path: data/metrics/bl/cora/graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: 82515ff9b56745d7e868ac492d9f2935.dir
+md5: 1bfd4107ea63e99b61227b8985eaf1fd

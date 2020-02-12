@@ -1,0 +1,41 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/train-eval-model.py --common-config
+  experiments/configs/train-eval-model/citeseer/common.yml --model-config experiments/configs/train-eval-model/citeseer/AttrE2vec_Exp.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/train-eval-model.py
+  md5: e03b55dd3e16e673c630efdec906d93e
+- path: experiments/configs/train-eval-model/citeseer/common.yml
+  md5: 1f418216d5330c07bbbb051483766793
+- path: experiments/configs/train-eval-model/citeseer/AttrE2vec_Exp.yml
+  md5: 37ae455440ae220519f89c3f61022419
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+- path: data/rws/citeseer
+  md5: f4ada249f9d80dc03b7b6de30329416f.dir
+outs:
+- path: data/models/citeseer/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 92a8abdc2f2660f5b2b4f6df5ea2a309.dir
+- path: data/plots/losses/citeseer/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 89b204c73e37cfad094cb264b3cb3bd2.dir
+- path: data/logs/citeseer/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: fa73d3457526198b00a78048a3b6d969.dir
+- path: data/metrics/ae/citeseer/AttrE2vec_Exp.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 609152bf9a2bebeb4aeccf450ab08e96
+- path: data/vectors/citeseer/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 6441b10944520bf9c2de95a97afdf7fc.dir
+md5: 6c440954be637454b5c2747cef737e8a

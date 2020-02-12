@@ -1,0 +1,7 @@
+md5: 641d3cc6de96bac2d2885561dab39069
+outs:
+- md5: 8dda40db73480b9fa0266c7039348562.dir
+  path: graphsage
+  cache: true
+  metric: false
+  persist: false

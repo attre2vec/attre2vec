@@ -1,0 +1,6 @@
+data/
+/l2v/embed/
+.ipynb_checkpoints/
+*.pyc
+.idea/
+.tox

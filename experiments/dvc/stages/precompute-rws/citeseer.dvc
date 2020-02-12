@@ -1,0 +1,17 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/precompute-rws.py --config experiments/configs/precompute-rws/citeseer.yml
+  --input data/datasets/citeseer.pkl --output data/rws/citeseer/
+wdir: ../../../..
+deps:
+- path: experiments/scripts/precompute-rws.py
+  md5: be80a98b78a2e42411b206f396900a65
+- path: experiments/configs/precompute-rws/citeseer.yml
+  md5: ab96008666795d48d344dd9ad74d8277
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+outs:
+- path: data/rws/citeseer
+  cache: true
+  metric: false
+  persist: false
+  md5: f4ada249f9d80dc03b7b6de30329416f.dir
+md5: ee4681220b808235757af7d545cc5b16

@@ -1,0 +1,4 @@
+walker-name: 'uniform'
+args:
+  walk_length: 8
+  num_walks: 16

@@ -1,0 +1,22 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-mlp-baseline.py --common-config
+  experiments/configs/eval-mlp-baseline/cora.yml --method graphsage --dim 64
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-mlp-baseline.py
+  md5: 64d9e3a7282e1ce4321f1580c2ba2ebd
+- path: experiments/configs/eval-mlp-baseline/cora.yml
+  md5: 3d1cce45ce4b471b1c506e231632f5c5
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/MLP_graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: 9590333483667a92a4585066f261ad2f.dir
+- path: data/metrics/mlp/cora/graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: f2ead5d86f698d09b25976672b9f33a9.dir
+md5: 8ca97626009e30f873d265dda24fa073

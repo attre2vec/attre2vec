@@ -1,0 +1,13 @@
+model:
+  type: 'graphsage'
+  op: 'avg'
+  dim: 64
+
+scenarios:
+  - name: 'graphsage/nf/full'
+    concat: False
+    dim-reduction: -1
+
+  - name: 'graphsage/nfef/full'
+    concat: True
+    dim-reduction: -1

@@ -1,0 +1,21 @@
+cmd: bash -c "experiments/scripts/run-templated-notebook.sh experiments/notebooks/summarize-metrics.ipynb
+  experiments/configs/summarize-metrics.yml data/plots/metrics/summary.html"
+wdir: ../../..
+deps:
+- path: experiments/scripts/run-templated-notebook.sh
+  md5: 39ae3a5085e3226557c331f6a6e3a3b9
+- path: experiments/notebooks/summarize-metrics.ipynb
+  md5: b5a3a50dfcd9eb93bea0cb1a961676f4
+- path: experiments/notebooks/hidecode.tpl
+  md5: 6d4aa2c1452c40fb657621f91d4549ea
+- path: experiments/configs/summarize-metrics.yml
+  md5: 5a10a343925f503a69310bdc84d8e772
+- path: data/metrics
+  md5: 3b8055fc02c5501ab47ced8e5760c3a1.dir
+outs:
+- path: data/plots/metrics/summary.html
+  cache: true
+  metric: false
+  persist: false
+  md5: d82febaacf7a10021f853b5903d7a1fe
+md5: 505cc27032a8711a0ebf1b8c6239842d

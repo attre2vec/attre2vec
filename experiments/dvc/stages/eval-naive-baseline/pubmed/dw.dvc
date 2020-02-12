@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/pubmed/common.yml --config experiments/configs/eval-naive-baseline/pubmed/dw.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/pubmed/common.yml
+  md5: 014860c9876090eeb4a35b4f7b54f499
+- path: experiments/configs/eval-naive-baseline/pubmed/dw.yml
+  md5: 05b1def8ea812c6b24353488a25c9d1e
+- path: data/datasets/pubmed.pkl
+  md5: 64a20ec1015a9478f6b70bb78ddb8996
+outs:
+- path: data/vectors/pubmed/BL_dw
+  cache: true
+  metric: false
+  persist: false
+  md5: 8e094ce238ab7fc19f49a9d90e20d3c9.dir
+- path: data/metrics/bl/pubmed/dw
+  cache: true
+  metric: false
+  persist: false
+  md5: 96246074b1b0485e3b6ec4383f5e9e3b.dir
+md5: 68757b0ddd3234dcca329b2b879da59e

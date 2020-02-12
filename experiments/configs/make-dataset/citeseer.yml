@@ -1,0 +1,9 @@
+node-emb-dim: 32
+split-sizes:
+  train: 20  # per cls
+  validation: 1000  # total
+  test: 1000  # total
+doc2vec:
+  dim: 128
+  epochs: 200
+num-datasets: 10

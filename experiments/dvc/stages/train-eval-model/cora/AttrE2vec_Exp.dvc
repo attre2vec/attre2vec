@@ -1,0 +1,41 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/train-eval-model.py --common-config
+  experiments/configs/train-eval-model/cora/common.yml --model-config experiments/configs/train-eval-model/cora/AttrE2vec_Exp.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/train-eval-model.py
+  md5: e03b55dd3e16e673c630efdec906d93e
+- path: experiments/configs/train-eval-model/cora/common.yml
+  md5: 67116f04a073ab539fa987c836f10306
+- path: experiments/configs/train-eval-model/cora/AttrE2vec_Exp.yml
+  md5: 7f43bcbe0409b665cce1be390af0d614
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+- path: data/rws/cora
+  md5: 2557c358125d8e9eb2e976f5ecc17fcc.dir
+outs:
+- path: data/models/cora/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 4df184da1d5a344846b9e1494268a480.dir
+- path: data/plots/losses/cora/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 0b33a6001d4ca41a5bf6937f47188d3a.dir
+- path: data/logs/cora/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: a29d693673f6301c48d11e73e1b1ed1b.dir
+- path: data/metrics/ae/cora/AttrE2vec_Exp.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 95df9a04f31c9d0587b710cc174f3349
+- path: data/vectors/cora/AttrE2vec_Exp
+  cache: true
+  metric: false
+  persist: false
+  md5: 377110701488e781c2b8b04eadbb30da.dir
+md5: 2dcdec45fa31545a6e5dfc045ac5647d

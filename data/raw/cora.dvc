@@ -1,0 +1,7 @@
+md5: 77f5e21da32302a14326b73daf4dbdf9
+outs:
+- md5: fbc1916c8a8dbf5713b0f95d8b793a8a.dir
+  path: cora
+  cache: true
+  metric: false
+  persist: false

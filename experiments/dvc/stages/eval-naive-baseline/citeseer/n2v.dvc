@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/citeseer/common.yml --config experiments/configs/eval-naive-baseline/citeseer/n2v.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/citeseer/common.yml
+  md5: 76afa3ca24855024acbbb09549510c87
+- path: experiments/configs/eval-naive-baseline/citeseer/n2v.yml
+  md5: 2a5596f0929258377c1a7fd2cc6533a5
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+outs:
+- path: data/vectors/citeseer/BL_n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 3035293d4f3ef55a4d42ba19d8302cd2.dir
+- path: data/metrics/bl/citeseer/n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: f2607738a6fd5a2c4b566b00c481cf9b.dir
+md5: fe92940134558dc2edcb8a0bb9e747dd

@@ -1,0 +1,22 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-mlp-baseline.py --common-config
+  experiments/configs/eval-mlp-baseline/cora.yml --method n2v --dim 64
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-mlp-baseline.py
+  md5: 64d9e3a7282e1ce4321f1580c2ba2ebd
+- path: experiments/configs/eval-mlp-baseline/cora.yml
+  md5: 3d1cce45ce4b471b1c506e231632f5c5
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/MLP_n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 8689cb077dd73829e42006c171634a03.dir
+- path: data/metrics/mlp/cora/n2v
+  cache: true
+  metric: false
+  persist: false
+  md5: 30a9418ada4f560798c941578616802a.dir
+md5: 2f85db8dd178f2ff6b54c3fef0f6a6ef

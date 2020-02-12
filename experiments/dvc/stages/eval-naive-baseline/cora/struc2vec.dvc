@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/cora/common.yml --config experiments/configs/eval-naive-baseline/cora/struc2vec.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/cora/common.yml
+  md5: 2e467925eb70fa2d06490adad3576da1
+- path: experiments/configs/eval-naive-baseline/cora/struc2vec.yml
+  md5: 68e4a3dea8724ec5e65b00290c980042
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+outs:
+- path: data/vectors/cora/BL_struc2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 49dd82cf6412041b14e057f545a9e839.dir
+- path: data/metrics/bl/cora/struc2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 4232bceccc36a254d266bb7c7bf59f1c.dir
+md5: 1769e75d7452e7873f262a8f4d5cf5c8

@@ -1,0 +1,23 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-line2vec.py --config experiments/configs/eval-line2vec/cora.yml
+wdir: ../../../..
+deps:
+- path: experiments/scripts/eval-line2vec.py
+  md5: 4fd5e2786e6d32d31eea25a6cad848f0
+- path: experiments/configs/eval-line2vec/cora.yml
+  md5: 1d1f9947fc71921b4bc080732c69948e
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+- path: data/line2vec/embed/cora.pkl
+  md5: f6540b273be90d67d424840d9a5ea5ba
+outs:
+- path: data/vectors/cora/BL_line2vec
+  cache: true
+  metric: false
+  persist: false
+  md5: 2f794d1db59740ffde759ea830077907.dir
+- path: data/metrics/bl/cora/line2vec.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 0d454b35c99d687c774b4cb97e095be8
+md5: e7776631169e82bf485ed63731334589

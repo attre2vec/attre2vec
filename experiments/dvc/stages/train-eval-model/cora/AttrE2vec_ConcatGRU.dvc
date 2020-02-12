@@ -1,0 +1,41 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/train-eval-model.py --common-config
+  experiments/configs/train-eval-model/cora/common.yml --model-config experiments/configs/train-eval-model/cora/AttrE2vec_ConcatGRU.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/train-eval-model.py
+  md5: e03b55dd3e16e673c630efdec906d93e
+- path: experiments/configs/train-eval-model/cora/common.yml
+  md5: 67116f04a073ab539fa987c836f10306
+- path: experiments/configs/train-eval-model/cora/AttrE2vec_ConcatGRU.yml
+  md5: 6c36feb65bf721e146fe225a597019d7
+- path: data/datasets/cora.pkl
+  md5: d78bf084390c8841edea587bde61809e
+- path: data/rws/cora
+  md5: 2557c358125d8e9eb2e976f5ecc17fcc.dir
+outs:
+- path: data/models/cora/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: d10e0283cadcb55e72967bdb24b76891.dir
+- path: data/plots/losses/cora/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: a6b8a8a96429709a17dd6a8c2e3ccfb6.dir
+- path: data/logs/cora/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: c5621b16185dec0c537fda407a58aab1.dir
+- path: data/metrics/ae/cora/AttrE2vec_ConcatGRU.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: 5d35720ffdbd0b3ceee04089d177eed6
+- path: data/vectors/cora/AttrE2vec_ConcatGRU
+  cache: true
+  metric: false
+  persist: false
+  md5: 89934479359771d66ebe14e725e3adfe.dir
+md5: d18d6fa5c1615a0bb6c217cf8eb70a7c

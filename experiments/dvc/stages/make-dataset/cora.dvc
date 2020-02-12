@@ -1,0 +1,15 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/make-dataset.py --config experiments/configs/make-dataset/cora.yml
+  --name cora --output data/datasets/cora.pkl
+wdir: ../../../..
+deps:
+- path: experiments/scripts/make-dataset.py
+  md5: dfee728ab346800700e7a8ba05a4e8b3
+- path: experiments/configs/make-dataset/cora.yml
+  md5: d0689436b249296527065680974ced40
+outs:
+- path: data/datasets/cora.pkl
+  cache: true
+  metric: false
+  persist: false
+  md5: d78bf084390c8841edea587bde61809e
+md5: 09a9f9d32b56acbe479ff00a830b258e

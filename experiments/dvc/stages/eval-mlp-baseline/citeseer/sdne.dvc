@@ -1,0 +1,22 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-mlp-baseline.py --common-config
+  experiments/configs/eval-mlp-baseline/citeseer.yml --method sdne --dim 64
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-mlp-baseline.py
+  md5: 64d9e3a7282e1ce4321f1580c2ba2ebd
+- path: experiments/configs/eval-mlp-baseline/citeseer.yml
+  md5: f02c43c7fc2d64b839ef6053f142b692
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+outs:
+- path: data/vectors/citeseer/MLP_sdne
+  cache: true
+  metric: false
+  persist: false
+  md5: be30790d3ea01960daecd6f5aaaee012.dir
+- path: data/metrics/mlp/citeseer/sdne
+  cache: true
+  metric: false
+  persist: false
+  md5: 5540a37520339c1ac0cf7d4c1d77b3db.dir
+md5: e931d70842584ab40ad2c953b00bf4f8

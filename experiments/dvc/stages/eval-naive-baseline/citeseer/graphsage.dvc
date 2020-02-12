@@ -1,0 +1,24 @@
+cmd: PYTHONPATH=. python3 experiments/scripts/eval-naive-baseline.py --common-config
+  experiments/configs/eval-naive-baseline/citeseer/common.yml --config experiments/configs/eval-naive-baseline/citeseer/graphsage.yml
+wdir: ../../../../..
+deps:
+- path: experiments/scripts/eval-naive-baseline.py
+  md5: 3e9b0b7f1ff7b484013b1c3ebb3668b6
+- path: experiments/configs/eval-naive-baseline/citeseer/common.yml
+  md5: 76afa3ca24855024acbbb09549510c87
+- path: experiments/configs/eval-naive-baseline/citeseer/graphsage.yml
+  md5: c3ae00588efd6353d1720b77f604f3f7
+- path: data/datasets/citeseer.pkl
+  md5: 8b37f897dc65dfe6fafc6db0795bfc9e
+outs:
+- path: data/vectors/citeseer/BL_graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: 87b905dcf101d3110ab9096b0d41423d.dir
+- path: data/metrics/bl/citeseer/graphsage
+  cache: true
+  metric: false
+  persist: false
+  md5: 964a155283e910313ddad7279e8d38ad.dir
+md5: f1b49f666977c0c7cfc5d171370568f0
