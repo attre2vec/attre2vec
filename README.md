@@ -42,14 +42,15 @@ can be reproduced using the `dvc repro <stage-name>` command.
 If you make use of AttrE2vec in your research, please cite it using the following entry:
 
 ```
-@article{bielak2020edge,
-  title         = {AttrE2vec: Unsupervised Attributed Edge Representation Learning},
-  author        = {Piotr Bielak and Tomasz Kajdanowicz and Nitesh V. Chawla},
-  year          = {2020},
-  eprint        = {2012.14727},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.LG}
-}
+@article{BIELAK2022,
+    title = {AttrE2vec: Unsupervised Attributed Edge Representation Learning},
+    journal = {Information Sciences},
+    year = {2022},
+    issn = {0020-0255},
+    doi = {https://doi.org/10.1016/j.ins.2022.01.048},
+    url = {https://www.sciencedirect.com/science/article/pii/S0020025522000779},
+    author = {Piotr Bielak and Tomasz Kajdanowicz and Nitesh V. Chawla},
+}              
 ```
 
 
